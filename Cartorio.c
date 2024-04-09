@@ -142,7 +142,8 @@ int main()
         printf("Selecione uma opção: \n\n"); 
         printf("\t I   - Registrar um novo nome\n"); // \t Recuo no texto
         printf("\t II  - Buscar nome\n");
-        printf("\t III - Deletar nome\n\n\n");
+        printf("\t III - Deletar nome\n");
+        printf("\t IV  - Sair do sistema\n\n\n");
         printf("Opção: ");
 
         scanf("%d", &option); //Escaneia o que o usuário digita (& - indica onde armazenar)
@@ -162,6 +163,11 @@ int main()
 
             case 3:
             deletar();
+            break;
+
+            case 4:
+            printf("Obrigado por utilizar o sistema.");
+            return 0;
             break;
 
             default:
